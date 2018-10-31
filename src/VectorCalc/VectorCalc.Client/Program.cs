@@ -8,7 +8,7 @@ namespace VectorCalc.Client
     {
         static void Main(string[] args)
         {
-            var client = new TcpClient("192.168.99.1", 49374);
+            var client = new TcpClient("192.168.99.100", 49374);
 
             var sw = System.Diagnostics.Stopwatch.StartNew();
 
@@ -27,6 +27,8 @@ namespace VectorCalc.Client
             client.Close();
 
             Console.WriteLine($"Time passed: {sw.ElapsedMilliseconds}");
+
+            Console.ReadLine();
         }
     }
 }
