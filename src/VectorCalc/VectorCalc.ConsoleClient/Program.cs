@@ -40,8 +40,8 @@ namespace VectorCalc.ConsoleClient
 
         private static void TestBlockingClient()
         {
-            var client = new BlockingTcpClient(KnownValues.ServerIPLocalhost, KnownValues.PreferredPort);
-            //var client = new BlockingTcpClient(KnownValues.ServerIPDocker, KnownValues.PreferredPort);
+            //var client = new BlockingTcpClient(KnownValues.ServerIPLocalhost, KnownValues.PreferredPort);
+            var client = new BlockingTcpClient(KnownValues.ServerIPDocker, KnownValues.PreferredPort);
 
             Console.WriteLine($"Testing service on {client.HostIP}:{client.Port}");
 

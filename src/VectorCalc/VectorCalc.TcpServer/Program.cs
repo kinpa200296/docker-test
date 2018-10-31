@@ -17,7 +17,7 @@ namespace VectorCalc.TcpServer
             while (true)
             {
                 var s = Console.ReadLine();
-                if (s.ToLowerInvariant() == "exit")
+                if (s?.ToLowerInvariant() == "exit")
                     break;
             }
             server.StopServer();
